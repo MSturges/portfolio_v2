@@ -1,13 +1,16 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Route, IndexRoute, Redirect } from 'react-router';
 
 import App from './components/app';
-import ProfileIndex  from './components/profile_index';
+import ProfileIndex  from './components/components_profile/profile_index';
+import SlideIndex  from './components/components_slide/slide_index';
+import ContactIndex  from './components/components_contact/contact_index';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute component={ProfileIndex} />
+  <IndexRoute component={ProfileIndex} />
+  <Route path="slide" component={SlideIndex} />
+  <Route path="contact" component={ContactIndex} />
+  <Redirect from="*" to="/" />
   </Route>
 );
-
-// <Route path="joke/new" component={JokeNew} />

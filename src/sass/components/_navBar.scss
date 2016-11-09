@@ -1,0 +1,23 @@
+@import '../utils/variables';
+
+.navBar{
+  background-color: white !important;
+
+  .navLogo {
+    height: 110px;
+    margin-bottom: 6px;
+  }
+
+  .nav-tabs-container {
+    .navTabs {
+      border: 1px solid black !important;
+      height: 110px !important;
+      color: black !important;
+      background-color: white !important;
+      
+
+    }
+
+  }
+
+}

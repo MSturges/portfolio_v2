@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Paper, RaisedButton } from 'material-ui'
 
-class ProfileIndex extends Component {
+class SlideIndex extends Component {
 
   render() {
 
     return (
       <div>
-      <h1> Whats up dude? </h1>
+      <h1>Slide Page</h1>
       </div>
     );
 
   }
 }
 
-export default ProfileIndex;
+export default SlideIndex;
