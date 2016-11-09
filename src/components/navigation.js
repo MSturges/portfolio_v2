@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux';
 import {Tabs, Tab, AppBar} from 'material-ui';
 import * as actions from '../actions';
@@ -9,6 +9,7 @@ class NavBar extends Component {
 
   constructor(props) {
     super(props)
+    console.log(this.props.location.pathname);
   }
 
   static contextTypes = {
@@ -17,9 +18,6 @@ class NavBar extends Component {
 
   componentWillMount() {
     browserHistory.listen((location) => {
-      if (location.pathname === '/') {
-        this.props.setCurrentTab(1)
-      }
     })
   }
 
@@ -33,20 +31,22 @@ class NavBar extends Component {
   }
 
   handleTabChange(tabValue) {
+    console.log('tabValue', tabValue);
     this.props.setCurrentTab(tabValue)
   }
 
   render() {
 
     const underLineStyle = {
-      backgroundColor: 'rgb(201,249,253)'
+      backgroundColor: 'black',
+      height: '3px'
     }
 
     return (
 
       <AppBar
-      className="navBar"
-      iconElementLeft={<img src='images/logo.jpg' className='navLogo'/>}
+      className="nav-bar"
+      iconElementLeft={<img src='images/logo.jpg' className='nav-logo'/>}
       children={ [
         <Tabs
         key={0}
@@ -58,19 +58,19 @@ class NavBar extends Component {
         <Tab
         label='Profile'
         value={1}
-        className='navTabs'
+        className='nav-tabs'
         onActive={() => this.switchComponent('/')}
         />
         <Tab
         label='Slide'
         value={2}
-        className='navTabs'
+        className='nav-tabs'
         onActive={() => this.switchComponent('/slide')}
         />
         <Tab
         label='contact'
         value={3}
-        className='navTabs'
+        className='nav-tabs'
         onActive={() => this.switchComponent('/contact')}
         />
         </Tabs> ] }

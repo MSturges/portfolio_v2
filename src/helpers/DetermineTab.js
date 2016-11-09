@@ -1,23 +1,16 @@
 export function determineTab(location) {
   switch (location) {
     case '/':
-    return 0
-    break
-
-    case '/':
     return 1
     break
 
-    case '/':
+    case '/slide':
     return 2
     break
 
-    case '/':
-    return 1
+    case '/contact':
+    return 3
     break
 
-    default:
-    return 12
-    break
   }
 }
