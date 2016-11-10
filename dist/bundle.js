@@ -30382,7 +30382,7 @@
 
 	      return _react2.default.createElement(_materialUi.AppBar, {
 	        className: 'nav-bar',
-	        iconElementLeft: _react2.default.createElement('img', { src: 'images/logo.jpg', className: 'nav-logo' }),
+	        iconElementLeft: _react2.default.createElement('img', { src: 'images/logomain.jpg', className: 'nav-logo' }),
 	        children: [_react2.default.createElement(
 	          _materialUi.Tabs,
 	          {
@@ -30421,6 +30421,7 @@
 	// onActive={() => this.switchComponent('/contact')}
 	// />
 
+	//dumb
 	// <Tab
 	// label='Parallax'
 	// value={2}
@@ -66437,7 +66438,7 @@
 	  }, {
 	    id: 5,
 	    title: 'Angular.js DropZio',
-	    images: '/images/dropzio1.png',
+	    images: '/images/dropziomain.png',
 	    url: '#',
 	    github: {
 	      web: 'https://github.com/MSturges/dropzioApp2',
@@ -66445,7 +66446,7 @@
 	    }
 	  }, { id: 6,
 	    title: 'Angular.js Yodle',
-	    images: '/images/yodel1.png',
+	    images: '/images/yodelmain.png',
 	    url: '#',
 	    github: {
 	      web: 'https://github.com/MSturges/YodelApp',

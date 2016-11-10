@@ -45,7 +45,7 @@ const ProfileProjects = () => {
     {
       id:5,
       title: 'Angular.js DropZio',
-      images: '/images/dropzio1.png',
+      images: '/images/dropziomain.png',
       url: '#',
       github: {
         web: 'https://github.com/MSturges/dropzioApp2',
@@ -54,7 +54,7 @@ const ProfileProjects = () => {
     },
     { id:6,
       title: 'Angular.js Yodle',
-      images: '/images/yodel1.png',
+      images: '/images/yodelmain.png',
       url: '#',
       github: {
         web: 'https://github.com/MSturges/YodelApp',
