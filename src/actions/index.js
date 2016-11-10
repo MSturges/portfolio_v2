@@ -3,6 +3,7 @@ import axios from 'axios';
 const SET_CURRENT_TAB = 'SET_CURRENT_TAB'
 const TOGGLE_SIDE_NAV = 'TOGGLE_SIDE_NAV'
 const TOGGLE_TABS = 'TOGGLE_TABS'
+const SEND_EMAIL = 'SEND_EMAIL'
 
 
 export function setCurrentTab(currentTab) {

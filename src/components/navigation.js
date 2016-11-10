@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {Tabs, Tab, AppBar} from 'material-ui';
 import * as actions from '../actions';
 import { browserHistory } from 'react-router';
-import { determineTab } from '../helpers/determineTab';
+import { determineTab } from '../helpers/determinetab';
 
 class NavBar extends Component {
 
@@ -59,12 +59,7 @@ class NavBar extends Component {
         className='nav-tabs'
         onActive={() => this.switchComponent('/')}
         />
-        <Tab
-        label='Contact'
-        value={3}
-        className='nav-tabs'
-        onActive={() => this.switchComponent('/contact')}
-        />
+
         <Tab
           label='RESUME'
           className='nav-tabs-resume'
@@ -76,6 +71,14 @@ class NavBar extends Component {
       );
     }
   }
+
+
+  // <Tab
+  // label='Contact'
+  // value={3}
+  // className='nav-tabs'
+  // onActive={() => this.switchComponent('/contact')}
+  // />
 
   // <Tab
   // label='Parallax'
