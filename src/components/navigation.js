@@ -40,10 +40,8 @@ class NavBar extends Component {
       backgroundColor: 'black',
       height: '3px'
     }
-
-
+    
     return (
-
       <AppBar
       className="nav-bar"
       iconElementLeft={<img src='images/logo.jpg' className='nav-logo'/>}
@@ -62,13 +60,13 @@ class NavBar extends Component {
         onActive={() => this.switchComponent('/')}
         />
         <Tab
-        label='Slide'
+        label='Parallax'
         value={2}
         className='nav-tabs'
         onActive={() => this.switchComponent('/slide')}
         />
         <Tab
-        label='contact'
+        label='Contact'
         value={3}
         className='nav-tabs'
         onActive={() => this.switchComponent('/contact')}
