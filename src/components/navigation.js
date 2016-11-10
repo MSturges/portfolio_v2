@@ -59,7 +59,6 @@ class NavBar extends Component {
         className='nav-tabs'
         onActive={() => this.switchComponent('/')}
         />
-
         <Tab
           label='RESUME'
           className='nav-tabs-resume'
@@ -80,6 +79,7 @@ class NavBar extends Component {
   // onActive={() => this.switchComponent('/contact')}
   // />
 
+//dumb
   // <Tab
   // label='Parallax'
   // value={2}
