@@ -2,20 +2,33 @@
 
 .nav-bar{
   background-color: white !important;
+  -webkit-box-shadow:0px 1px 1px #de1dde;
+  -moz-box-shadow:0px 1px 1px #de1dde;
+  box-shadow:0px 1px 1px #de1dde;
 
+  height: 93px;
+
+  span {
+    div {
+      background: black !important;
+    }
+  }
   .nav-logo {
-    height: 90px;
+    height: 80px;
     vertical-align: middle;
   }
-
   .nav-tabs-container {
     background-color: white !important;
-    width: 30%;
-    
+    width: 400px;
     .nav-tabs {
-      background-color: white !important;
-      height: 103px !important;
+      background: white !important;
+      height: 93px !important;
       color: black !important;
+      font-weight: bolder !important;
+      &:hover {
+        background: rgb(219, 219, 219) !important;
+      }
     }
+
   }
 }

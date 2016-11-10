@@ -9,7 +9,7 @@ class NavBar extends Component {
 
   constructor(props) {
     super(props)
-    console.log(this.props.location.pathname);
+    // console.log(this.props.location.pathname);
   }
 
   static contextTypes = {
@@ -31,7 +31,6 @@ class NavBar extends Component {
   }
 
   handleTabChange(tabValue) {
-    console.log('tabValue', tabValue);
     this.props.setCurrentTab(tabValue)
   }
 
@@ -41,6 +40,7 @@ class NavBar extends Component {
       backgroundColor: 'black',
       height: '3px'
     }
+
 
     return (
 
@@ -73,9 +73,7 @@ class NavBar extends Component {
         className='nav-tabs'
         onActive={() => this.switchComponent('/contact')}
         />
-        </Tabs> ] }
-
-        />
+        </Tabs> ] }/>
       );
     }
   }
