@@ -31,11 +31,12 @@
       }
     }
     .nav-tabs-resume {
+      margin-top: -2px !important;
       background: white !important;
       color: black !important;
       font-weight: bolder !important;
       height: 70px !important;
-      // padding-top: 9px !important;
+      padding-top: 11px !important;
       &:hover {
         background: rgb(219, 219, 219) !important;
       }

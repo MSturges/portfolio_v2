@@ -40,7 +40,7 @@ class NavBar extends Component {
       backgroundColor: 'black',
       height: '3px'
     }
-    
+
     return (
       <AppBar
       className="nav-bar"
@@ -60,21 +60,29 @@ class NavBar extends Component {
         onActive={() => this.switchComponent('/')}
         />
         <Tab
-        label='Parallax'
-        value={2}
-        className='nav-tabs'
-        onActive={() => this.switchComponent('/slide')}
-        />
-        <Tab
         label='Contact'
         value={3}
         className='nav-tabs'
         onActive={() => this.switchComponent('/contact')}
         />
+        <Tab
+          label='RESUME'
+          className='nav-tabs-resume'
+          id='resumeTab'
+          href='/images/resume.pdf'
+          target='_blank'
+          />
         </Tabs> ] }/>
       );
     }
   }
+
+  // <Tab
+  // label='Parallax'
+  // value={2}
+  // className='nav-tabs'
+  // onActive={() => this.switchComponent('/slide')}
+  // />
 
   function mapStateToProps(state) {
     return {
