@@ -20,7 +20,7 @@ const ProjectPaperCreator = (props) => {
       style={style}
       zDepth={5}
       >
-      <h3>{project.title}</h3>
+      <h2>{project.title}</h2>
       </Paper></a>
     );
   });
