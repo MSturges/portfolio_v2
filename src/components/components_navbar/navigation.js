@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux';
 import {Tabs, Tab, AppBar} from 'material-ui';
-import * as actions from '../actions';
+import * as actions from '../../actions';
 import { browserHistory } from 'react-router';
-import { determineTab } from '../helpers/determinetab';
+import { determineTab } from '../../helpers/determinetab';
 
 class NavBar extends Component {
 

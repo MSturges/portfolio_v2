@@ -75,17 +75,17 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reduxPromise = __webpack_require__(627);
+	var _reduxPromise = __webpack_require__(628);
 
 	var _reduxPromise2 = _interopRequireDefault(_reduxPromise);
 
-	__webpack_require__(634);
+	__webpack_require__(635);
 
 	var _MuiThemeProvider = __webpack_require__(436);
 
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 
-	var _reactTapEventPlugin = __webpack_require__(638);
+	var _reactTapEventPlugin = __webpack_require__(639);
 
 	var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
 
@@ -30224,15 +30224,15 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _profile_index = __webpack_require__(620);
+	var _profile_index = __webpack_require__(621);
 
 	var _profile_index2 = _interopRequireDefault(_profile_index);
 
-	var _slide_index = __webpack_require__(625);
+	var _slide_index = __webpack_require__(626);
 
 	var _slide_index2 = _interopRequireDefault(_slide_index);
 
-	var _contact_index = __webpack_require__(626);
+	var _contact_index = __webpack_require__(627);
 
 	var _contact_index2 = _interopRequireDefault(_contact_index);
 
@@ -30267,6 +30267,10 @@
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
+	var _footer = __webpack_require__(620);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30291,7 +30295,8 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navigation2.default, null),
-	        this.props.children
+	        this.props.children,
+	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
 	  }]);
@@ -66201,6 +66206,29 @@
 /* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = function Footer() {
+
+	  return _react2.default.createElement("div", { className: "footer" });
+	};
+
+	exports.default = Footer;
+
+/***/ },
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -66215,11 +66243,11 @@
 
 	var _reactRedux = __webpack_require__(173);
 
-	var _profile_header = __webpack_require__(621);
+	var _profile_header = __webpack_require__(622);
 
 	var _profile_header2 = _interopRequireDefault(_profile_header);
 
-	var _profile_projects = __webpack_require__(623);
+	var _profile_projects = __webpack_require__(624);
 
 	var _profile_projects2 = _interopRequireDefault(_profile_projects);
 
@@ -66259,7 +66287,7 @@
 	exports.default = ProfileIndex;
 
 /***/ },
-/* 621 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66274,7 +66302,7 @@
 
 	var _materialUi = __webpack_require__(292);
 
-	var _android = __webpack_require__(622);
+	var _android = __webpack_require__(623);
 
 	var _android2 = _interopRequireDefault(_android);
 
@@ -66350,7 +66378,7 @@
 	exports.default = ProfileHeader;
 
 /***/ },
-/* 622 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66387,7 +66415,7 @@
 	exports.default = ActionAndroid;
 
 /***/ },
-/* 623 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66400,7 +66428,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _profile_projects_paper = __webpack_require__(624);
+	var _profile_projects_paper = __webpack_require__(625);
 
 	var _profile_projects_paper2 = _interopRequireDefault(_profile_projects_paper);
 
@@ -66471,7 +66499,7 @@
 	      _react2.default.createElement(
 	        'h2',
 	        null,
-	        _react2.default.createElement('span', { 'class': 'fa fa-terminal' }),
+	        _react2.default.createElement('span', { className: 'fa fa-terminal animated flash infinite' }),
 	        'Portfolio'
 	      ),
 	      _react2.default.createElement(_profile_projects_paper2.default, { projects: projectData })
@@ -66482,7 +66510,7 @@
 	exports.default = ProfileProjects;
 
 /***/ },
-/* 624 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66540,7 +66568,7 @@
 	exports.default = ProjectPaperCreator;
 
 /***/ },
-/* 625 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66598,7 +66626,7 @@
 	exports.default = SlideIndex;
 
 /***/ },
-/* 626 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66656,7 +66684,7 @@
 	exports.default = ContactIndex;
 
 /***/ },
-/* 627 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66667,7 +66695,7 @@
 
 	exports['default'] = promiseMiddleware;
 
-	var _fluxStandardAction = __webpack_require__(628);
+	var _fluxStandardAction = __webpack_require__(629);
 
 	function isPromise(val) {
 	  return val && typeof val.then === 'function';
@@ -66694,7 +66722,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 628 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66705,7 +66733,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _lodashIsplainobject = __webpack_require__(629);
+	var _lodashIsplainobject = __webpack_require__(630);
 
 	var _lodashIsplainobject2 = _interopRequireDefault(_lodashIsplainobject);
 
@@ -66724,7 +66752,7 @@
 	}
 
 /***/ },
-/* 629 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -66735,9 +66763,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var baseFor = __webpack_require__(630),
-	    isArguments = __webpack_require__(631),
-	    keysIn = __webpack_require__(632);
+	var baseFor = __webpack_require__(631),
+	    isArguments = __webpack_require__(632),
+	    keysIn = __webpack_require__(633);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -66833,7 +66861,7 @@
 
 
 /***/ },
-/* 630 */
+/* 631 */
 /***/ function(module, exports) {
 
 	/**
@@ -66887,7 +66915,7 @@
 
 
 /***/ },
-/* 631 */
+/* 632 */
 /***/ function(module, exports) {
 
 	/**
@@ -67122,7 +67150,7 @@
 
 
 /***/ },
-/* 632 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -67133,8 +67161,8 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var isArguments = __webpack_require__(631),
-	    isArray = __webpack_require__(633);
+	var isArguments = __webpack_require__(632),
+	    isArray = __webpack_require__(634);
 
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -67260,7 +67288,7 @@
 
 
 /***/ },
-/* 633 */
+/* 634 */
 /***/ function(module, exports) {
 
 	/**
@@ -67446,16 +67474,16 @@
 
 
 /***/ },
-/* 634 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(635);
+	var content = __webpack_require__(636);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(637)(content, {});
+	var update = __webpack_require__(638)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -67472,21 +67500,21 @@
 	}
 
 /***/ },
-/* 635 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(636)();
+	exports = module.exports = __webpack_require__(637)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      margin-top: -2px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n.profile-header-container {\n  height: 360px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0px 3px 3px black;\n  -moz-box-shadow: 0px 3px 3px black;\n  box-shadow: 0px 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;\n    border-radius: 5px; }\n    .profile-header-container .profile-container .profile-pic-container .profile-pic {\n      border-radius: 10px;\n      height: 185px;\n      width: 200px;\n      display: 'inline-block';\n      background: url(\"/images/profile.jpeg\") no-repeat center top;\n      background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 16px; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 70px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important;\n    margin-top: 35px !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 520px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 70px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .2s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper h3 {\n      margin: 0;\n      color: white;\n      background: #385469;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n.project-paper:nth-child(5) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n.project-paper:nth-child(6) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      margin-top: -2px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n.profile-header-container {\n  height: 360px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0px 3px 3px black;\n  -moz-box-shadow: 0px 3px 3px black;\n  box-shadow: 0px 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;\n    border-radius: 5px; }\n    .profile-header-container .profile-container .profile-pic-container .profile-pic {\n      border-radius: 10px;\n      height: 185px;\n      width: 200px;\n      display: 'inline-block';\n      background: url(\"/images/profile.jpeg\") no-repeat center top;\n      background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 16px; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 70px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important;\n    margin-top: 35px !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 520px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 70px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n    .projects-container h2 span {\n      padding-right: 20px;\n      -webkit-animation-duration: 2.4s; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .2s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper h3 {\n      margin: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n.project-paper:nth-child(5) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n.project-paper:nth-child(6) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n\n.footer {\n  margin-top: 70px;\n  height: 50px;\n  width: 100%;\n  background: #3c4044; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 636 */
+/* 637 */
 /***/ function(module, exports) {
 
 	/*
@@ -67542,7 +67570,7 @@
 
 
 /***/ },
-/* 637 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -67794,11 +67822,11 @@
 
 
 /***/ },
-/* 638 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(639);
-	var defaultClickRejectionStrategy = __webpack_require__(640);
+	/* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(640);
+	var defaultClickRejectionStrategy = __webpack_require__(641);
 
 	var alreadyInjected = false;
 
@@ -67820,14 +67848,14 @@
 	  alreadyInjected = true;
 
 	  __webpack_require__(44).injection.injectEventPluginsByName({
-	    'TapEventPlugin':       __webpack_require__(641)(shouldRejectClick)
+	    'TapEventPlugin':       __webpack_require__(642)(shouldRejectClick)
 	  });
 	};
 
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 639 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -67882,7 +67910,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 640 */
+/* 641 */
 /***/ function(module, exports) {
 
 	module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -67893,7 +67921,7 @@
 
 
 /***/ },
-/* 641 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -67921,10 +67949,10 @@
 	var EventPluginUtils = __webpack_require__(46);
 	var EventPropagators = __webpack_require__(43);
 	var SyntheticUIEvent = __webpack_require__(77);
-	var TouchEventUtils = __webpack_require__(642);
+	var TouchEventUtils = __webpack_require__(643);
 	var ViewportMetrics = __webpack_require__(78);
 
-	var keyOf = __webpack_require__(643);
+	var keyOf = __webpack_require__(644);
 	var topLevelTypes = EventConstants.topLevelTypes;
 
 	var isStartish = EventPluginUtils.isStartish;
@@ -68069,7 +68097,7 @@
 
 
 /***/ },
-/* 642 */
+/* 643 */
 /***/ function(module, exports) {
 
 	/**
@@ -68117,7 +68145,7 @@
 
 
 /***/ },
-/* 643 */
+/* 644 */
 /***/ function(module, exports) {
 
 	/**

@@ -69,9 +69,10 @@ const ProfileProjects = () => {
     <div className="projects-main-container">
     <div className="projects-break"></div>
     <div className="projects-container">
-    <h2><span class="fa fa-terminal"></span>Portfolio</h2>
+    <h2><span className="fa fa-terminal animated flash infinite"></span>Portfolio</h2>
 
-  <ProjectPaperCreator projects={projectData}/>
+    <ProjectPaperCreator projects={projectData}/>
+
     </div>
     </div>
   );
