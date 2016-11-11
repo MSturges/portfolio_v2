@@ -1,8 +1,8 @@
 .profile-header-container{
-  height: 340px;
+  height: 360px;
   width: 100%;
-  padding-top: 40px;
-  background: url("/images/profileBackDrop.jpg") no-repeat center bottom fixed;
+  padding-top: 25px;
+  background: url("/images/profileBackDrop.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -48,14 +48,19 @@
   }
   .btn-container{
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     text-align: center;
+    margin-top: 70px;
 
-    .social-media-button {
-      margin: 1%;
-      margin-left: 0;
+    .social-media-button{
+      border: 3px solid white;
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+
     }
   }
+
 }
 
 @media (max-width: 990px) {
@@ -65,6 +70,7 @@
   }
   .btn-container{
     width: 80% !important;
+    margin-top: 35px !important;
   }
 }
 @media (max-width: 760px) {
@@ -74,11 +80,12 @@
   }
   .btn-container{
     width: 100% !important;
+
   }
 }
 @media (max-width: 520px) {
   .profile-header-container{
-    height: 380px;
+    height: 400px;
     padding-top: 10px;
   }
   .profile-container{
@@ -94,6 +101,7 @@
   }
   .btn-container{
     width: 280px !important;
+    margin-top: 0 !important;
     .social-media-button {
       width: 100% !important;
     }

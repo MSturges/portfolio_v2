@@ -67,12 +67,15 @@ const ProfileProjects = () => {
 
   return (
     <div className="projects-main-container">
-    <h3 className="projects-header"> Web Development Projects</h3>
+    <div className="projects-header"></div>
     <div className="projects-container">
-    <ProjectPaperCreator projects={projectData}/>
+
+  <ProjectPaperCreator projects={projectData}/>
     </div>
     </div>
   );
 }
+
+
 
 export default ProfileProjects;
