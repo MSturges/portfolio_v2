@@ -44,29 +44,23 @@
   }
 }
 
-
-
 .project-paper {
   background-size: 400px 250px !important;
 }
-
-
-
-.project-paper:nth-child(5) {
-  background: no-repeat center center;
-  background-size: contain;;
-}
-.project-paper:nth-child(6) {
-  background: no-repeat center center;
-  background-size: contain;
-}
-
-
 
 @media (max-width: 760px) {
   .projects-main-container{
     .projects-header{
       width: 100%;
     }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .project-paper {
+    margin-left:  0 !important;
+    margin-right:  0 !important;
+    width: 100% !important;
   }
 }

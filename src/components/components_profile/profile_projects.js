@@ -71,7 +71,7 @@ const ProfileProjects = () => {
     <div className="projects-container">
     <h2><span className="fa fa-terminal animated flash infinite"></span>Portfolio</h2>
 
-    <ProjectPaperCreator projects={projectData}/>
+    <ProjectPaperCreator projects={projectData} clsssName="project-list"/>
 
     </div>
     </div>
