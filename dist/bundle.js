@@ -66280,6 +66280,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var style = {
+	  margin: 2
+	};
+
 	var ProfileHeader = function ProfileHeader() {
 
 	  return _react2.default.createElement(
@@ -66299,7 +66303,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Max Sturges'
+	          'Max Sturges:'
 	        ),
 	        _react2.default.createElement(
 	          'p',
@@ -66315,25 +66319,28 @@
 	        href: 'https://github.com/msturges',
 	        className: 'social-media-button',
 	        label: 'Git-Hub',
+	        style: style,
 	        icon: _react2.default.createElement(_materialUi.FontIcon, { className: 'fa fa-github socialButtonIcon' })
 	      }),
 	      _react2.default.createElement(_materialUi.RaisedButton, {
 	        href: 'https://www.linkedin.com/in/max-r-sturges',
 	        className: 'social-media-button',
 	        label: 'linked-In',
-	        target: '_blank',
+	        style: style,
 	        icon: _react2.default.createElement(_materialUi.FontIcon, { className: 'fa fa-linkedin socialButtonIcon' })
 	      }),
 	      _react2.default.createElement(_materialUi.RaisedButton, {
 	        href: 'mailto:max.r.sturges@gmail.com',
 	        label: 'max.r.sturges@gmail.com',
 	        className: 'social-media-button',
+	        style: style,
 	        icon: _react2.default.createElement(_materialUi.FontIcon, { className: 'fa fa-envelope socialButtonIcon' })
 	      }),
 	      _react2.default.createElement(_materialUi.RaisedButton, {
 	        href: '#',
 	        label: '(914) 582-0029',
 	        className: 'social-media-button',
+	        style: style,
 	        icon: _react2.default.createElement(_materialUi.FontIcon, { className: 'fa fa-phone socialButtonIcon' })
 	      })
 	    )
@@ -66457,14 +66464,16 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'projects-main-container' },
-	    _react2.default.createElement(
-	      'h3',
-	      { className: 'projects-header' },
-	      ' Web Development Projects'
-	    ),
+	    _react2.default.createElement('div', { className: 'projects-break' }),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'projects-container' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        _react2.default.createElement('span', { 'class': 'fa fa-terminal' }),
+	        'Portfolio'
+	      ),
 	      _react2.default.createElement(_profile_projects_paper2.default, { projects: projectData })
 	    )
 	  );
@@ -67471,7 +67480,7 @@
 
 
 	// module
-	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      margin-top: -2px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n.profile-header-container {\n  height: 340px;\n  width: 100%;\n  padding-top: 40px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center bottom fixed;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0px 3px 3px black;\n  -moz-box-shadow: 0px 3px 3px black;\n  box-shadow: 0px 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;\n    border-radius: 5px; }\n    .profile-header-container .profile-container .profile-pic-container .profile-pic {\n      border-radius: 10px;\n      height: 185px;\n      width: 200px;\n      display: 'inline-block';\n      background: url(\"/images/profile.jpeg\") no-repeat center top;\n      background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 16px; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 70%;\n    text-align: center; }\n    .profile-header-container .btn-container .social-media-button {\n      margin: 1%;\n      margin-left: 0; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 520px) {\n  .profile-header-container {\n    height: 380px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container {\n  padding-top: 30px; }\n  .projects-main-container .projects-header {\n    margin: 0 auto;\n    width: 70%;\n    text-align: center;\n    background-color: #385469;\n    border-radius: 7px;\n    color: white;\n    box-shadow: 0 0 20px #000;\n    margin-bottom: 20px;\n    transition: width 1s; }\n  .projects-main-container span {\n    font-size: 60px; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .2s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper h3 {\n      margin: 0;\n      color: white;\n      background: #385469;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n.project-paper:nth-child(5) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n.project-paper:nth-child(6) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      margin-top: -2px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n.profile-header-container {\n  height: 360px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0px 3px 3px black;\n  -moz-box-shadow: 0px 3px 3px black;\n  box-shadow: 0px 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;\n    border-radius: 5px; }\n    .profile-header-container .profile-container .profile-pic-container .profile-pic {\n      border-radius: 10px;\n      height: 185px;\n      width: 200px;\n      display: 'inline-block';\n      background: url(\"/images/profile.jpeg\") no-repeat center top;\n      background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 16px; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 70px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important;\n    margin-top: 35px !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 520px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 70px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .2s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper h3 {\n      margin: 0;\n      color: white;\n      background: #385469;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n.project-paper:nth-child(5) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n.project-paper:nth-child(6) {\n  background: no-repeat center center;\n  background-size: contain; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n", ""]);
 
 	// exports
 
