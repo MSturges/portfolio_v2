@@ -1,27 +1,31 @@
 .projects-main-container{
   // padding-top: 30px;
 
-  .projects-header{
+  .projects-break{
     height: 50px;
     margin: 0 auto;
     width: 100%;
     text-align: center;
     background-color: rgb(60, 64, 68);
     color: white;
-    box-shadow: 0 0 20px #000;
-    margin-bottom: 20px;
     transition: width 1s;
   }
-  span {
-    font-size: 60px;
-  }
-
 }
 
 .projects-container{
   margin: 0 auto;
   width: 100%;
   text-align: center;
+
+  h2 {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    padding-top: 12px;
+    margin-bottom: 70px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039);
+  }
+
   .project-paper {
     -webkit-animation-duration: .8s;
     -webkit-animation-delay: .2s;
@@ -37,20 +41,20 @@
 
 
 
-  .project-paper {
-    background-size: 400px 250px !important;
-  }
+.project-paper {
+  background-size: 400px 250px !important;
+}
 
 
 
-  .project-paper:nth-child(5) {
-    background: no-repeat center center;
-    background-size: contain;;
-  }
-  .project-paper:nth-child(6) {
-    background: no-repeat center center;
-    background-size: contain;
-  }
+.project-paper:nth-child(5) {
+  background: no-repeat center center;
+  background-size: contain;;
+}
+.project-paper:nth-child(6) {
+  background: no-repeat center center;
+  background-size: contain;
+}
 
 
 

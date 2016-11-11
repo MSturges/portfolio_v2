@@ -67,8 +67,9 @@ const ProfileProjects = () => {
 
   return (
     <div className="projects-main-container">
-    <div className="projects-header"></div>
+    <div className="projects-break"></div>
     <div className="projects-container">
+    <h2><span class="fa fa-terminal"></span>Portfolio</h2>
 
   <ProjectPaperCreator projects={projectData}/>
     </div>
