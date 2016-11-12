@@ -7,7 +7,7 @@ import ProfileProjects from './profile_projects';
 class ProfileIndex extends Component {
 
   render() {
-
+    
     return (
       <div>
         <ProfileHeader/>

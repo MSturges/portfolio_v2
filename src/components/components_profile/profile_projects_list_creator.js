@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper } from 'material-ui';
+import { Link } from 'react-router';
 
 const ProjectPaperCreator = (props) => {
   const ProjectPaperItems = props.projects.map((project) => {
@@ -13,6 +14,8 @@ const ProjectPaperCreator = (props) => {
       background: 'url(' + `${project.images}` + ')',
     };
 
+
+    // onActive={() => this.switchComponent('/')}
     return (
       <a key={project.id} href={project.github.web}>
       <Paper
@@ -31,5 +34,9 @@ const ProjectPaperCreator = (props) => {
     </div>
   );
 };
+
+
+
+
 
 export default ProjectPaperCreator;
