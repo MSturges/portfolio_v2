@@ -19,19 +19,16 @@ class NavBar extends Component {
   }
 
   handleTabChange(tabValue) {
-    if (tabValue == 3) {
-        browserHistory.push('/');
-        tabValue = 1;
-    }
+    this.props.setCurrentTab(tabValue)
   }
 
-
-
   render() {
+
     const underLineStyle = {
       backgroundColor: 'black',
       height: '3px'
     }
+
     return (
       <AppBar
       className="nav-bar"
@@ -51,18 +48,13 @@ class NavBar extends Component {
         onActive={() => this.switchComponent('/')}
         />
         <Tab
-        label='Contact'
         value={2}
-        className='nav-tabs'
-        onActive={() => this.switchComponent('/contact')}
-        />
-        <Tab
-        value={3}
         label='RESUME'
         className='nav-tabs-resume'
         id='resumeTab'
         href='/images/resume.pdf'
         target='_blank'
+        onActive={() => this.switchComponent('/')}
         />
         </Tabs> ] }/>
       );
