@@ -4,12 +4,12 @@ export function determineTab(location) {
     return 1
     break
 
-    case '/slide':
+    case '/contact':
     return 2
     break
 
-    case '/contact':
-    return 3
+    case '/resume':
+    return 1
     break
 
   }

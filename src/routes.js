@@ -9,7 +9,6 @@ import ContactIndex  from './components/components_contact/contact_index';
 export default (
   <Route path="/" component={App}>
   <IndexRoute component={ProfileIndex} />
-  <Route path="slide" component={SlideIndex} />
   <Route path="contact" component={ContactIndex} />
   <Redirect from="*" to="/" />
   </Route>
