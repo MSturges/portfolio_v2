@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 
-
-
 class MobileProjectDetails extends Component {
 
   componentWillMount() {
@@ -23,12 +21,9 @@ class MobileProjectDetails extends Component {
     this.props.setCurrentProject(project)
   }
 
-
   render() {
 
     var {project} = this.props;
-
-    console.log(project);
 
     if (project) {
       return (
