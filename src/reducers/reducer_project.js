@@ -11,28 +11,31 @@ const initialState = {
       url: 'http://www.crushroutes.com/',
       web: 'https://github.com/MSturges/crushRoutesWeb',
       server: 'https://github.com/MSturges/crushRoutesAPI',
-      mobile: 'https://github.com/MSturges/crushRoutesMobile'
+      mobile: 'https://github.com/MSturges/crushRoutesMobile',
+      details: 'hi'
     },
     {
       id:2,
+      title: 'Dropzio',
+      header: 'Angular.js & Ionic/Cordova',
+      footer: 'Ruby on rails & psql',
+      image1: '/images/dropzio1.png',
+      image2: '/images/dropzio2.png',
+      image3: '/images/dropzio3.png',
+      image4: '/images/dropzio4.png',
+      web: 'https://github.com/MSturges/dropzioApp2',
+      server: 'https://github.com/MSturges/dropzio_server',
+      details: ''
+    },
+    {
+      id:3,
       title: 'Reddit Clone',
       header: 'React & Redux',
       footer: 'Node/Express & psql',
       image: '/images/reddit-clone.png',
       url: 'https://redux-reddit-clone.herokuapp.com/',
       web: 'https://github.com/MSturges/reddit-clone',
-      server: '#/no'
-
-    },
-    {
-      id:3,
-      title: 'Dropzio',
-      header: 'Angular.js & Ionic/Cordova',
-      footer: 'Ruby on rails & psql',
-      image: '/images/dropziomain.png',
-      url: '#',
-      web: 'https://github.com/MSturges/dropzioApp2',
-      server: 'https://github.com/MSturges/dropzio_server',
+      details: ''
 
     },
     {
@@ -42,8 +45,8 @@ const initialState = {
       footer: 'Node/Express',
       image: '/images/weather.png',
       url: 'http://reduxreactapp.s3-website-us-west-2.amazonaws.com/',
-      web: 'https://github.com/MSturges/reduxWeatherApp'
-
+      web: 'https://github.com/MSturges/reduxWeatherApp',
+      details: ''
     },
     {
       id: 5,
@@ -52,16 +55,20 @@ const initialState = {
       footer: 'Node/Express & psql',
       image: '/images/comedyCellar.png',
       url: 'https://comedy-cellar.herokuapp.com/',
-      web: 'https://github.com/MSturges/redux-react-jokes-CRUD'
+      web: 'https://github.com/MSturges/redux-react-jokes-CRUD',
+      details: ''
     },
     { id:6,
       title: 'Yodel',
       header: 'Angular.js & Ionic/Cordova',
       footer: 'Node/Express & psql',
-      image: '/images/yodelmain.png',
-      url: '#',
+      image1: '/images/yodel1.png',
+      image2: '/images/yodel2.png',
+      image3: '/images/yodel3.png',
+      image4: '/images/yodel4.png',
       web: 'https://github.com/MSturges/YodelApp',
-      server: 'https://github.com/MSturges/yodel'
+      server: 'https://github.com/MSturges/yodel',
+      details: ''
 
     }
   ]

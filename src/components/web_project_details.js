@@ -14,15 +14,12 @@ class WebProjectDetails extends Component {
     browserHistory.listen((location) => {
       return id = location.pathname.slice(5, 6);
     })
-
     const findProject = this.props.projects.filter((p) => {
       if (p.id == id) {
         return p;
       }
     })
-
     const project = findProject[0];
-
     this.props.setCurrentProject(project)
   }
 
@@ -54,16 +51,10 @@ class WebProjectDetails extends Component {
             {project.server ?  <a className="live-site"href={project.server}><span className="devicons devicons-github_badge"></span>View server files</a> : null}
             <br/>
             {project.mobile ?  <a className="live-site"href={project.mobile}><span className="devicons devicons-github_badge"></span>View mobile files</a> : null}
-
-
-            <p></p>
+            <br/>
+            <p>{project.details}</p>
           </div>
-
-
         </div>
-
-
-
         </div>
       );
     } else {
