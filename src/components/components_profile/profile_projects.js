@@ -29,7 +29,7 @@ class ProfileProjects extends Component {
         url: 'https://redux-reddit-clone.herokuapp.com/',
         github: {
           web: 'https://github.com/MSturges/reddit-clone',
-          server: '#',
+          server: '#/no',
         }
       },
       {
