@@ -14,8 +14,6 @@ const ProjectPaperCreator = (props) => {
       background: 'url(' + `${project.images}` + ')',
     };
 
-
-    // onActive={() => this.switchComponent('/')}
     return (
       <a key={project.id} href={project.github.web}>
       <Paper

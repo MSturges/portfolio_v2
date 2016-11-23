@@ -1,13 +1,8 @@
 import React, { Component }from 'react';
-import ProjectPaperCreator from './profile_projects_list_creator';
-import ProjectDetail from './profile_project_detail';
-
+import ProjectPaperCreator from './projects_list';
 
 class ProfileProjects extends Component {
-
-
   render() {
-
     const projectData = [
       {
         id: 1,
@@ -84,10 +79,6 @@ class ProfileProjects extends Component {
         }
       },
     ];
-
-    // console.log(this.state.id);
-
-
 
     return (
       <div className="projects-main-container">
