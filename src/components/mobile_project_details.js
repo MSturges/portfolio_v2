@@ -7,7 +7,7 @@ import * as actions from '../actions';
 
 
 
-class ProjectDetails extends Component {
+class MobileProjectDetails extends Component {
 
   componentWillMount() {
     var id;
@@ -31,13 +31,15 @@ class ProjectDetails extends Component {
 
     var {project} = this.props;
 
+    console.log(project);
+
     if (project) {
       return (
         <div className="project-detail-container">
         <div className="project-break"></div>
         <h2><span className="fa fa-terminal animated flash infinite"></span>{project.title}</h2>
 
-        
+
         <Link to="/">Back</Link>
         </div>
       );
@@ -58,4 +60,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, actions)(ProjectDetails);
+export default connect(mapStateToProps, actions)(MobileProjectDetails);

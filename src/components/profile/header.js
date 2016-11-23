@@ -20,7 +20,7 @@ const ProfileHeader = () => {
     <p>Max Sturges is a full-stack JavaScript developer living in Boulder, CO.
     He has been developing for over a year and half, and is
     passionate about web development.  Currently Max is working as
-    a contractor while learnng new technologies.</p>
+    a freelancer while learnng new technologies.</p>
     </div>
     </div>
     <div className="btn-container">
