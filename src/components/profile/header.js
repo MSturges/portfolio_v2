@@ -58,7 +58,6 @@ const ProfileHeader = () => {
     />
 
     </div>
-
     </div>
   );
 }

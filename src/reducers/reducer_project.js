@@ -1,7 +1,6 @@
-import { SET_CURRENT_TAB } from '../actions/types';
+import { CURRENT_PROJECT } from '../actions/types';
 
 const initialState = {
-  currentTab: 0,
   projectData: [
     {
       id: 1,
@@ -83,8 +82,8 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
 
-    case SET_CURRENT_TAB:
-    return { ...state, currentTab: action.payload }
+    case CURRENT_PROJECT:
+    return { ...state, project: action.payload }
     break
 
     default:

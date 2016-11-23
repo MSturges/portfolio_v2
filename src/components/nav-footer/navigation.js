@@ -28,7 +28,6 @@ class NavBar extends Component {
       backgroundColor: 'black',
       height: '3px'
     }
-
     return (
       <AppBar
       className="nav-bar"

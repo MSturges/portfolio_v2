@@ -1,1 +1,2 @@
 export const SET_CURRENT_TAB = 'SET_CURRENT_TAB';
+export const CURRENT_PROJECT = 'CURRENT_PROJECT';

@@ -15,7 +15,7 @@ const ProjectPaperCreator = (props) => {
     };
 
     return (
-      <a key={project.id} href={project.github.web}>
+      <Link key={project.id} to={"/project/" + project.id} >
       <Paper
       className="animated fadeInDownBig project-paper"
       style={style}
@@ -23,7 +23,7 @@ const ProjectPaperCreator = (props) => {
       >
       <h2 className="project-title">{project.title}</h2>
       <h2 className="project-footer">{project.footer}</h2>
-      </Paper></a>
+      </Paper></Link>
     );
   });
 
