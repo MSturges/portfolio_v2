@@ -38,13 +38,23 @@
     background-size: 400px 250px;
 
     &:hover{
-      box-shadow: 0px 0px 7px 7px rgb(110, 210, 204) !important;
+      box-shadow: 0px 1px 7px 7px black !important;
 
     }
-    h2{
+    .project-title{
       height: 38px;
       font-family: 'Crimson Text', serif;
       margin: 0;
+      padding-top: 0;
+      color: white;
+      background: rgb(60, 64, 68);
+      text-decoration: underline;
+    }
+    .project-footer{
+      height: 38px;
+      font-family: 'Crimson Text', serif;
+      margin: 0;
+      margin-top: 175px;
       padding-top: 0;
       color: white;
       background: rgb(60, 64, 68);

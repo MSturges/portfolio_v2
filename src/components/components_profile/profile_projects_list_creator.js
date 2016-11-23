@@ -8,7 +8,7 @@ const ProjectPaperCreator = (props) => {
     const style = {
       height: 250,
       width: 400,
-      margin: 10,
+      margin: 15,
       textAlign: 'center',
       display: 'inline-block',
       background: 'url(' + `${project.images}` + ')',
@@ -23,7 +23,8 @@ const ProjectPaperCreator = (props) => {
       style={style}
       zDepth={5}
       >
-      <h2>{project.title}</h2>
+      <h2 className="project-title">{project.title}</h2>
+      <h2 className="project-footer">{project.footer}</h2>
       </Paper></a>
     );
   });
