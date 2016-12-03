@@ -31,7 +31,7 @@ class NavBar extends Component {
     return (
       <AppBar
       className="nav-bar"
-      iconElementLeft={<img src='images/logomain.jpg' className='nav-logo'/>}
+      iconElementLeft={<img src='/images/logomain.jpg' className='nav-logo'/>}
       children={ [
         <Tabs
         key={0}
