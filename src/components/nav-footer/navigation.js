@@ -55,7 +55,7 @@ class NavBar extends Component {
         target='_blank'
         onActive={() => this.switchComponent('/')}
         />
-        </Tabs> ] }/>
+        // </Tabs> ] }/>
       );
     }
   }

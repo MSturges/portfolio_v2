@@ -81,9 +81,15 @@
 
 	__webpack_require__(669);
 
+	var _colors = __webpack_require__(534);
+
 	var _MuiThemeProvider = __webpack_require__(447);
 
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
+
+	var _getMuiTheme = __webpack_require__(448);
+
+	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 
 	var _reactTapEventPlugin = __webpack_require__(673);
 
@@ -91,13 +97,19 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var muiTheme = (0, _getMuiTheme2.default)({
+	  tabs: {
+	    backgroundColor: 'white'
+	  }
+	});
+
 	(0, _reactTapEventPlugin2.default)();
 
 	var createStoreWithMiddleware = (0, _redux.applyMiddleware)(_reduxPromise2.default)(_redux.createStore);
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _MuiThemeProvider2.default,
-	  null,
+	  { muiTheme: muiTheme },
 	  _react2.default.createElement(
 	    _reactRedux.Provider,
 	    { store: createStoreWithMiddleware(_reducers2.default) },
@@ -30198,21 +30210,22 @@
 
 	var initialState = {
 	  projectData: [{
+	    id: 5,
+	    title: 'Seed Code',
+	    image: '/images/seedcode.png',
+	    url: 'https://www.seedcode.com/filemaker-calendar/',
+	    details: 'I’ve been working remote as a contracted software developer for SeedCode.  My contracts have been recurring and consist of working synchronously with their team of developers for both front-end and back-end live applications. I work heavily in Angular.Js, JavaScript, BootStrap and, Node/Express.  My work consist of charming up the UI, creating additional features to improve UX, and building Node/Express proxy servers that parse calendar data.'
+	  }, {
 	    id: 1,
 	    title: 'Crush Routes',
-	    header: 'Angular.js',
-	    footer: 'Node/Express & psql',
 	    image: '/images/crush_routes_main.png',
 	    url: 'http://www.crushroutes.com/',
 	    web: 'https://github.com/MSturges/crushRoutesWeb',
 	    server: 'https://github.com/MSturges/crushRoutesAPI',
-	    mobile: 'https://github.com/MSturges/crushRoutesMobile',
 	    details: 'Crush Routes is a software designed for climbers of all sorts to share and find climbing spots.  The database of routes can be queried by type of climb (rock, ice, boulder) and by minimum and maximum difficulty.  Crush Routes was created in Angular.js and includes material-ui, leaflet and google maps.  The backend was created with node/express and uses a postgreSQL database.'
 	  }, {
 	    id: 2,
 	    title: 'Dropzio',
-	    header: 'Angular.js & Ionic/Cordova',
-	    footer: 'Ruby on rails & psql',
 	    image1: '/images/dropzio1.png',
 	    image2: '/images/dropzio2.png',
 	    image3: '/images/dropzio3.png',
@@ -30224,8 +30237,6 @@
 	  }, {
 	    id: 3,
 	    title: 'Reddit Clone',
-	    header: 'React & Redux',
-	    footer: 'Node/Express & psql',
 	    image: '/images/reddit-clone.png',
 	    url: 'https://redux-reddit-clone.herokuapp.com/',
 	    web: 'https://github.com/MSturges/reddit-clone',
@@ -30234,33 +30245,10 @@
 	  }, {
 	    id: 4,
 	    title: '5-day Weather',
-	    header: 'React & Redux',
-	    footer: 'Node/Express',
 	    image: '/images/weather.png',
 	    url: 'http://reduxreactapp.s3-website-us-west-2.amazonaws.com/',
 	    web: 'https://github.com/MSturges/reduxWeatherApp',
 	    details: '5-day weather allows users to get a 5-day forecast of the weather in any city in the US. 5-day weather uses the open weather API for data and google maps.  The front end was created in React & Redux while being served up on a node/express content server.'
-	  }, {
-	    id: 5,
-	    title: 'Comedy Cellar',
-	    header: 'React & Redux',
-	    footer: 'Node/Express & psql',
-	    image: '/images/comedyCellar.png',
-	    url: 'https://comedy-cellar.herokuapp.com/',
-	    web: 'https://github.com/MSturges/redux-react-jokes-CRUD',
-	    details: 'Comedy Cellar allows users to create and share jokes with the community. Comedy Cellar is a CRUD application. The front end was created in React & Redux while being served up on a node/express content server.'
-	  }, { id: 6,
-	    title: 'Yodel',
-	    header: 'Angular.js & Ionic/Cordova',
-	    footer: 'Node/Express & psql',
-	    image1: '/images/yodel1.png',
-	    image2: '/images/yodel2.png',
-	    image3: '/images/yodel3.png',
-	    image4: '/images/yodel4.png',
-	    web: 'https://github.com/MSturges/YodelApp',
-	    server: 'https://github.com/MSturges/yodel',
-	    details: 'Yodel is a social geolocation mobile app designed to promote meeting new people and face to face interaction. The app allows users to see others within a custom range and send those users messages. It was created in Ionic and Cordova and written in AngularJS. It has a CRUD back end in Express and Knex to manage users and their location data.'
-
 	  }]
 	};
 
@@ -30472,7 +30460,8 @@
 	            onActive: function onActive() {
 	              return _this2.switchComponent('/');
 	            }
-	          })
+	          }),
+	          '// '
 	        )] });
 	    }
 	  }]);
@@ -67765,7 +67754,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Max Sturges is primarily a full-stack JavaScript developer as well as an adaptor of many other technologies.  Currently he is working as a freelancer in Boulder, Co.'
+	          'Max Sturges is primarily a full-stack JavaScript developer as well as an adaptor of technologies. He is an entrepreneur at heart and currently is working as a freelancer. When Max isn\'t coding, he enjoys rock climbing, skiing, and gaming.'
 	        )
 	      )
 	    ),
@@ -67944,7 +67933,7 @@
 	      var _style = {
 	        height: 250,
 	        width: 400,
-	        margin: 15,
+	        margin: 25,
 	        textAlign: 'center',
 	        display: 'inline-block',
 	        background: 'url(' + ('' + project.image1) + ')'
@@ -67963,12 +67952,7 @@
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'project-title' },
-	            project.header
-	          ),
-	          _react2.default.createElement(
-	            'h2',
-	            { className: 'project-footer' },
-	            project.footer
+	            project.title
 	          )
 	        )
 	      );
@@ -67977,7 +67961,7 @@
 	      var style = {
 	        height: 250,
 	        width: 400,
-	        margin: 15,
+	        margin: 25,
 	        textAlign: 'center',
 	        display: 'inline-block',
 	        background: 'url(' + ('' + project.image) + ')'
@@ -67996,12 +67980,7 @@
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'project-title' },
-	            project.header
-	          ),
-	          _react2.default.createElement(
-	            'h2',
-	            { className: 'project-footer' },
-	            project.footer
+	            project.title
 	          )
 	        )
 	      );
@@ -68273,7 +68252,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'No live viewing, Ionic view passcode available upon request!'
+	                'To view, download the Ionic View app for ios or android. Then use the app id Cd2056be.'
 	              ),
 	              project.web ? _react2.default.createElement(
 	                'a',
@@ -69151,7 +69130,7 @@
 
 
 	// module
-	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh;\n  font-family: 'Crimson Text', serif; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important;\n      font-family: 'Crimson Text', serif !important;\n      font-size: 20px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      font-size: 20px !important;\n      font-family: 'Crimson Text', serif !important;\n      margin-top: -7px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n.profile-header-container {\n  height: 360px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0px 3px 3px black;\n  -moz-box-shadow: 0px 3px 3px black;\n  box-shadow: 0px 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;\n    border-radius: 5px; }\n    .profile-header-container .profile-container .profile-pic-container .profile-pic {\n      border-radius: 10px;\n      height: 185px;\n      width: 200px;\n      display: 'inline-block';\n      background: url(\"/images/profile.jpeg\") no-repeat center top;\n      background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline;\n        font-family: 'Crimson Text', serif; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 18px;\n        font-weight: bold;\n        font-family: 'Crimson Text', serif; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 70px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important;\n    margin-top: 35px !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 560px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    font-family: 'Crimson Text', serif;\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 50px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n    .projects-container h2 span {\n      padding-right: 20px;\n      -webkit-animation-duration: 2.4s; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .0s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper:hover {\n      box-shadow: 0px 1px 7px 7px black !important; }\n    .projects-container .project-paper .project-title {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      padding-top: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n    .projects-container .project-paper .project-footer {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      margin-top: 175px;\n      padding-top: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n\n@media (max-width: 400px) {\n  .project-paper {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n    width: 100% !important; } }\n\n.footer {\n  margin-top: 50px;\n  height: 50px;\n  width: 100%;\n  background: #3c4044; }\n\n.paperForm {\n  margin: 0 auto;\n  margin-top: 50px;\n  width: 50%;\n  height: 500px;\n  margin-bottom: 300px; }\n  .paperForm .contact-form {\n    margin: 0 auto;\n    width: 100%;\n    padding: 30px; }\n    .paperForm .contact-form .submit-btn-container {\n      margin-top: 20px;\n      text-align: right; }\n\n.project-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-detail-container .btn-containerr .back-btn:hover {\n    margin-bottom: 12px;\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-detail-container .details-container .img-container {\n    text-align: center;\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .img-container .project-image {\n      width: 100%; }\n  .project-detail-container .details-container .info-container {\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-detail-container .details-container {\n    padding: 0; }\n    .project-detail-container .details-container .img-container {\n      width: 100%; }\n    .project-detail-container .details-container .info-container {\n      width: 100%; } }\n\n.project-mobile-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-mobile-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-mobile-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-mobile-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-mobile-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-mobile-detail-container .btn-containerr .back-btn:hover {\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-mobile-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-mobile-detail-container .details-container .img-container {\n    text-align: center;\n    width: 100%; }\n    .project-mobile-detail-container .details-container .img-container .project-image {\n      width: 24%;\n      margin: 2px;\n      border: 1px solid black; }\n  .project-mobile-detail-container .details-container .info-container {\n    width: 100%;\n    padding: 15px; }\n    .project-mobile-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-mobile-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-mobile-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-mobile-detail-container .details-container {\n    padding: 0; }\n    .project-mobile-detail-container .details-container .img-container {\n      margin-top: 20px;\n      width: 100%; }\n      .project-mobile-detail-container .details-container .img-container .project-image {\n        width: 48%; }\n    .project-mobile-detail-container .details-container .info-container {\n      width: 100%; } }\n", ""]);
+	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh;\n  font-family: 'Crimson Text', serif; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px;\n    overflow: hidden; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important;\n      font-family: 'Crimson Text', serif !important;\n      font-size: 20px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      font-size: 20px !important;\n      font-family: 'Crimson Text', serif !important;\n      margin-top: -7px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n@-moz-document url-prefix() {\n  body {\n    background: purple; }\n    body .nav-bar .nav-tabs-container .nav-tabs-resume {\n      margin-top: -41px !important; } }\n\n.profile-header-container {\n  height: 410px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0 3px 3px black;\n  -moz-box-shadow: 0 3px 3px black;\n  box-shadow: 0 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0 19px 60px, rgba(0, 0, 0, 0.219608) 0 15px 20px;\n    border-radius: 5px;\n    min-width: 300px;\n    /* 100px x3 = 300 */\n    overflow: scroll; }\n    .profile-header-container .profile-container .profile-pic-container {\n      min-width: 200px; }\n      .profile-header-container .profile-container .profile-pic-container .profile-pic {\n        border-radius: 10px;\n        height: 185px;\n        width: 200px;\n        display: 'inline-block';\n        background: url(\"/images/profile.jpeg\") no-repeat center top;\n        background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      float: right;\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline;\n        font-family: 'Crimson Text', serif; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 18px;\n        font-weight: bold;\n        font-family: 'Crimson Text', serif; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 90px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 560px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    font-family: 'Crimson Text', serif;\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 50px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n    .projects-container h2 span {\n      padding-right: 20px;\n      -webkit-animation-duration: 2.4s; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .0s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper:hover {\n      box-shadow: 0px 1px 15px 15px #96d2e6 !important; }\n    .projects-container .project-paper .project-title {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      padding-top: 0;\n      color: white;\n      background: rgba(60, 64, 68, 0.7);\n      text-decoration: underline;\n      box-shadow: none; }\n    .projects-container .project-paper .project-footer {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      margin-top: 175px;\n      padding-top: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n\n@media (max-width: 400px) {\n  .project-paper {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n    width: 100% !important; } }\n\n.footer {\n  margin-top: 50px;\n  height: 50px;\n  width: 100%;\n  background: #3c4044; }\n\n.paperForm {\n  margin: 0 auto;\n  margin-top: 50px;\n  width: 50%;\n  height: 500px;\n  margin-bottom: 300px; }\n  .paperForm .contact-form {\n    margin: 0 auto;\n    width: 100%;\n    padding: 30px; }\n    .paperForm .contact-form .submit-btn-container {\n      margin-top: 20px;\n      text-align: right; }\n\n.project-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-detail-container .btn-containerr .back-btn:hover {\n    margin-bottom: 12px;\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-detail-container .details-container .img-container {\n    text-align: center;\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .img-container .project-image {\n      width: 100%; }\n  .project-detail-container .details-container .info-container {\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-detail-container .details-container {\n    padding: 0; }\n    .project-detail-container .details-container .img-container {\n      width: 100%; }\n    .project-detail-container .details-container .info-container {\n      width: 100%; } }\n\n.project-mobile-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-mobile-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-mobile-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-mobile-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-mobile-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-mobile-detail-container .btn-containerr .back-btn:hover {\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-mobile-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-mobile-detail-container .details-container .img-container {\n    text-align: center;\n    width: 100%; }\n    .project-mobile-detail-container .details-container .img-container .project-image {\n      width: 24%;\n      margin: 2px;\n      border: 1px solid black; }\n  .project-mobile-detail-container .details-container .info-container {\n    width: 100%;\n    padding: 15px; }\n    .project-mobile-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-mobile-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-mobile-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-mobile-detail-container .details-container {\n    padding: 0; }\n    .project-mobile-detail-container .details-container .img-container {\n      margin-top: 20px;\n      width: 100%; }\n      .project-mobile-detail-container .details-container .img-container .project-image {\n        width: 48%; }\n    .project-mobile-detail-container .details-container .info-container {\n      width: 100%; } }\n", ""]);
 
 	// exports
 

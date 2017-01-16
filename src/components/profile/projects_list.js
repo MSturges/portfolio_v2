@@ -10,7 +10,7 @@ const ProjectPaperCreator = (props) => {
       const style = {
         height: 250,
         width: 400,
-        margin: 15,
+        margin: 25,
         textAlign: 'center',
         display: 'inline-block',
         background: 'url(' + `${project.image1}` + ')',
@@ -31,7 +31,7 @@ const ProjectPaperCreator = (props) => {
       var style = {
         height: 250,
         width: 400,
-        margin: 15,
+        margin: 25,
         textAlign: 'center',
         display: 'inline-block',
         background: 'url(' + `${project.image}` + ')',

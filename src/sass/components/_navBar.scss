@@ -21,6 +21,7 @@
   .nav-tabs-container {
     background-color: white !important;
     width: 400px;
+    overflow: hidden;
     .nav-tabs {
       background: white !important;
       height: 70px !important;
@@ -28,6 +29,7 @@
       font-weight: bolder !important;
       font-family: 'Crimson Text', serif !important;
       font-size: 20px !important;
+
       &:hover {
         background: rgb(219, 219, 219) !important;
       }
@@ -41,10 +43,26 @@
       font-weight: bolder !important;
       height: 70px !important;
       padding-top: 11px !important;
+
       &:hover {
         background: rgb(219, 219, 219) !important;
       }
+
     }
 
   }
+}
+
+@-moz-document url-prefix() {
+body {
+  background: purple;
+  .nav-bar {
+    .nav-tabs-container {
+      .nav-tabs-resume {
+        margin-top: -41px !important;
+        // margin-left: -0.125135252345px !important;
+      }
+    }
+  }
+}
 }
