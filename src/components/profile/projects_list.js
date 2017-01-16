@@ -23,8 +23,7 @@ const ProjectPaperCreator = (props) => {
         style={style}
         zDepth={5}
         >
-        <h2 className="project-title">{project.header}</h2>
-        <h2 className="project-footer">{project.footer}</h2>
+        <h2 className="project-title">{project.title}</h2>
         </Paper></Link>
       )
     } else {
@@ -45,8 +44,7 @@ const ProjectPaperCreator = (props) => {
         style={style}
         zDepth={5}
         >
-        <h2 className="project-title">{project.header}</h2>
-        <h2 className="project-footer">{project.footer}</h2>
+        <h2 className="project-title">{project.title}</h2>
         </Paper></Link>
       )
     }

@@ -45,7 +45,7 @@ class MobileProjectDetails extends Component {
           </div>
 
           <div className="info-container animated slideInRight">
-            <p>No live viewing, Ionic view passcode available upon request!</p>
+            <p>To view, download the Ionic View app for ios or android. Then use the app id Cd2056be.</p>
             {project.web ? <a className="live-site"href={project.web}><span className="devicons devicons-github_badge"></span>View web files</a> : null}
             <br/>
             {project.server ?  <a className="live-site"href={project.server}><span className="devicons devicons-github_badge"></span>View server files</a> : null}

@@ -17,10 +17,10 @@ const ProfileHeader = () => {
     </div>
     <div className="profile-info">
     <h1>Max Sturges:</h1>
-    <p>Max Sturges is primarily a full-stack JavaScript developer as well as an
-    adaptor of many other technologies.  Currently he is working as a freelancer
-    in Boulder, Co.</p>
-    </div>
+    <p>Max Sturges is primarily a full-stack JavaScript developer as well as an adaptor
+    of technologies. He is an entrepreneur at heart and currently is working as
+    a freelancer. When Max isn't coding, he enjoys rock climbing, skiing, and gaming.</p>
+    </div>  
     </div>
     <div className="btn-container">
 

@@ -1,5 +1,5 @@
 .profile-header-container{
-  height: 360px;
+  height: 410px;
   width: 100%;
   padding-top: 25px;
   background: url("/images/profileBackDrop.jpg") no-repeat center center;
@@ -54,7 +54,7 @@
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 90px;
 
     .social-media-button{
       border: 3px solid white;
@@ -74,7 +74,6 @@
   }
   .btn-container{
     width: 80% !important;
-    margin-top: 35px !important;
   }
 }
 @media (max-width: 760px) {
@@ -105,7 +104,7 @@
   }
   .btn-container{
     width: 280px !important;
-    margin-top: 0 !important;
+    margin-top: 0!important;
     .social-media-button {
       width: 100% !important;
     }

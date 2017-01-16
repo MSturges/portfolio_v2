@@ -47,8 +47,9 @@
       margin: 0;
       padding-top: 0;
       color: white;
-      background: rgb(60, 64, 68);
+      background: rgba(60, 64, 68, .7);
       text-decoration: underline;
+      box-shadow: none;
     }
     .project-footer{
       height: 38px;
