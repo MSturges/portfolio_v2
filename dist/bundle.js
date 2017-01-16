@@ -30444,7 +30444,7 @@
 	      };
 	      return _react2.default.createElement(_materialUi.AppBar, {
 	        className: 'nav-bar',
-	        iconElementLeft: _react2.default.createElement('img', { src: 'images/logomain.jpg', className: 'nav-logo' }),
+	        iconElementLeft: _react2.default.createElement('img', { src: '/images/logomain.jpg', className: 'nav-logo' }),
 	        children: [_react2.default.createElement(
 	          _materialUi.Tabs,
 	          {
@@ -67765,7 +67765,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Max Sturges is a full-stack JavaScript developer living in Boulder, CO. He has been developing for over a year and half, and is passionate about web development.  Currently Max is working as a freelancer while learnng new technologies.'
+	          'Max Sturges is primarily a full-stack JavaScript developer as well as an adaptor of many other technologies.  Currently he is working as a freelancer in Boulder, Co.'
 	        )
 	      )
 	    ),
