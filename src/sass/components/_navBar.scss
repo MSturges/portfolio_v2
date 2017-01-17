@@ -54,15 +54,13 @@
 }
 
 @-moz-document url-prefix() {
-body {
-  background: purple;
-  .nav-bar {
-    .nav-tabs-container {
-      .nav-tabs-resume {
-        margin-top: -41px !important;
-        // margin-left: -0.125135252345px !important;
+  body {
+    .nav-bar {
+      .nav-tabs-container {
+        .nav-tabs-resume {
+          margin-top: -41px !important;
+        }
       }
     }
   }
-}
 }
