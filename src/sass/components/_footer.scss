@@ -1,6 +1,14 @@
+.skills-break{
+  height: 50px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgb(60, 64, 68);
+  color: white;
+  transition: width 1s;
+}
+
 .footer {
-  margin-top: 50px;
-  height:50px;
+  height:120px;
   width:100%;
-  background: rgb(60, 64, 68);
+  background: rgb(44, 46, 48);
 }
