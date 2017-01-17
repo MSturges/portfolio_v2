@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 import App from './components/app';
-import ProfileProjects from './components/profile/profile_projects';
-import WebProjectDetails from './components/web_project_details'
-import MobileProjectDetails from './components/mobile_project_details'
+import ProfileProjects from './components/projects/projects_section';
+import WebProjectDetails from './components/projects/details/web_project_details'
+import MobileProjectDetails from './components/projects/details/mobile_project_details'
 
 export default (
   <Route path="/" component={App}>

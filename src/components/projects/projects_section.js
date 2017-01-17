@@ -1,5 +1,5 @@
 import React, { Component }from 'react';
-import ProjectPaperCreator from './projects_list';
+import ProjectPaperCreator from './list_creator/projects_list';
 import { connect } from 'react-redux';
 
 class ProfileProjects extends Component {

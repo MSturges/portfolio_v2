@@ -2,17 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router';
 import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
-import * as actions from '../actions';
+import * as actions from '../../../actions';
 
 
-
-
-class WebProjectDetails extends Component {
+class MobileProjectDetails extends Component {
 
   componentWillMount() {
     var id;
     browserHistory.listen((location) => {
-      return id = location.pathname.slice(5, 6);
+      return id = location.pathname.slice(8, 9);
     })
     const findProject = this.props.projects.filter((p) => {
       if (p.id == id) {
@@ -23,13 +21,13 @@ class WebProjectDetails extends Component {
     this.props.setCurrentProject(project)
   }
 
-
   render() {
+
     var {project} = this.props;
 
     if (project) {
       return (
-        <div className="project-detail-container">
+        <div className="project-mobile-detail-container">
         <div className="project-break"></div>
         <h2><span className="fa fa-terminal animated flash infinite"></span>{project.title}</h2>
 
@@ -40,12 +38,14 @@ class WebProjectDetails extends Component {
         <div className="details-container">
 
           <div className="img-container animated slideInLeft">
-            <img className="project-image" src={project.image}/>
+            <img className="project-image" src={project.image1}/>
+            <img className="project-image" src={project.image2}/>
+            <img className="project-image" src={project.image3}/>
+            <img className="project-image" src={project.image4}/>
           </div>
 
           <div className="info-container animated slideInRight">
-            <a className="live-site"href={project.url}><span className="devicons devicons-chrome"></span> Live Site</a>
-            <br/>
+            <p>To view, download the Ionic View app for ios or android. Then use the app id Cd2056be.</p>
             {project.web ? <a className="live-site"href={project.web}><span className="devicons devicons-github_badge"></span>View web files</a> : null}
             <br/>
             {project.server ?  <a className="live-site"href={project.server}><span className="devicons devicons-github_badge"></span>View server files</a> : null}
@@ -57,6 +57,7 @@ class WebProjectDetails extends Component {
         </div>
         </div>
       );
+
     } else {
       return(
         <div>loading</div>
@@ -74,4 +75,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, actions)(WebProjectDetails);
+export default connect(mapStateToProps, actions)(MobileProjectDetails);
