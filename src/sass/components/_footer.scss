@@ -11,4 +11,21 @@
   height:140px;
   width:100%;
   background: rgb(60, 64, 68);
+  text-align: center;
+  padding-top: 60px;
+  .footer-icon{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    &:hover {
+      color: rgb(45, 179, 255);
+    }
+    span {
+      font-size: 15px;
+      padding-left: 7px;
+    }
+  }
 }
