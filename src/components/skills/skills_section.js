@@ -22,7 +22,7 @@ const SkillsSection = () => {
     <div className="devicons devicons-custom devicons devicons-red devicons-angular"><div className="devicons-text">Angular</div></div>
     <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">React</div></div>
     <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">Redux</div></div>
-    <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">Web Pack</div></div>
+    <div className="devicons devicons-custom devicons devicons-white devicons-atom"><div className="devicons-text">Web Pack</div></div>
     <div className="devicons devicons-custom devicons devicons-red devicons-gulp"><div className="devicons-text">Gulp</div></div>
     <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">API development</div></div>
     <div className="devicons devicons-custom devicons devicons-blue devicons-postgresql"><div className="devicons-text">PostgreSQL</div></div>
@@ -30,7 +30,7 @@ const SkillsSection = () => {
     <div className="devicons devicons-custom devicons devicons-blue devicons-php"><div className="devicons-text">PhP</div></div>
     <div className="devicons devicons-custom devicons devicons-blue devicons-wordpress"><div className="devicons-text">Word Press</div></div>
     <div className="devicons devicons-custom devicons devicons-red devicons devicons-ruby_on_rails"><div className="devicons-text">Ruby on Rails</div></div>
-    <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">Heroku</div></div>
+    <div className="devicons devicons-custom devicons devicons-purple devicons-atom"><div className="devicons-text">Heroku</div></div>
     <div className="devicons devicons-custom devicons devicons-red devicons devicons-firebase"><div className="devicons-text">Fire Base</div></div>
     </div>
     <Footer/>
