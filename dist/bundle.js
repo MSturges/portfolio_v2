@@ -30272,9 +30272,9 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _profile_projects = __webpack_require__(658);
+	var _projects_section = __webpack_require__(658);
 
-	var _profile_projects2 = _interopRequireDefault(_profile_projects);
+	var _projects_section2 = _interopRequireDefault(_projects_section);
 
 	var _web_project_details = __webpack_require__(660);
 
@@ -30289,7 +30289,7 @@
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Route,
 	  { path: '/', component: _app2.default },
-	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _profile_projects2.default }),
+	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _projects_section2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/web/:Id', component: _web_project_details2.default }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/mobile/:Id', component: _mobile_project_details2.default }),
 	  _react2.default.createElement(_reactRouter.Redirect, { from: '*', to: '/' })
@@ -30315,13 +30315,17 @@
 
 	var _navigation2 = _interopRequireDefault(_navigation);
 
-	var _footer = __webpack_require__(654);
+	var _header_section = __webpack_require__(654);
+
+	var _header_section2 = _interopRequireDefault(_header_section);
+
+	var _skills_section = __webpack_require__(656);
+
+	var _skills_section2 = _interopRequireDefault(_skills_section);
+
+	var _footer = __webpack_require__(657);
 
 	var _footer2 = _interopRequireDefault(_footer);
-
-	var _profile_index = __webpack_require__(655);
-
-	var _profile_index2 = _interopRequireDefault(_profile_index);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30347,9 +30351,9 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navigation2.default, null),
-	        _react2.default.createElement(_profile_index2.default, null),
+	        _react2.default.createElement(_header_section2.default, null),
 	        this.props.children,
-	        _react2.default.createElement(_footer2.default, null)
+	        _react2.default.createElement(_skills_section2.default, null)
 	      );
 	    }
 	  }]);
@@ -67628,86 +67632,6 @@
 /* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Footer = function Footer() {
-
-	  return _react2.default.createElement("div", { className: "footer" });
-	};
-
-	exports.default = Footer;
-
-/***/ },
-/* 655 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(2);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRedux = __webpack_require__(160);
-
-	var _header = __webpack_require__(656);
-
-	var _header2 = _interopRequireDefault(_header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var ProfileIndex = function (_Component) {
-	  _inherits(ProfileIndex, _Component);
-
-	  function ProfileIndex() {
-	    _classCallCheck(this, ProfileIndex);
-
-	    return _possibleConstructorReturn(this, (ProfileIndex.__proto__ || Object.getPrototypeOf(ProfileIndex)).apply(this, arguments));
-	  }
-
-	  _createClass(ProfileIndex, [{
-	    key: 'render',
-	    value: function render() {
-
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_header2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return ProfileIndex;
-	}(_react.Component);
-	// <ProfileProjects/>
-
-	exports.default = ProfileIndex;
-
-/***/ },
-/* 656 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -67720,7 +67644,7 @@
 
 	var _materialUi = __webpack_require__(302);
 
-	var _android = __webpack_require__(657);
+	var _android = __webpack_require__(655);
 
 	var _android2 = _interopRequireDefault(_android);
 
@@ -67796,7 +67720,7 @@
 	exports.default = ProfileHeader;
 
 /***/ },
-/* 657 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67831,6 +67755,287 @@
 	ActionAndroid.muiName = 'SvgIcon';
 
 	exports.default = ActionAndroid;
+
+/***/ },
+/* 656 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _footer = __webpack_require__(657);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var SkillsSection = function SkillsSection() {
+
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'skill-container' },
+	    _react2.default.createElement('div', { className: 'skills-break' }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'skills-break-head' },
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        _react2.default.createElement('span', { className: 'fa fa-cogs' }),
+	        'Technologies & Skills'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'skills-container' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-white devicons devicons devicons-terminal' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Terminal'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-green devicons devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Atom'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-green devicons-github_badge' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Git Hub'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-rust devicons devicons-html5' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'HTML'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-blue devicons devicons-css3' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'CSS'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-pink devicons devicons-sass' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Sass'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-rust devicons devicons-bower' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Bower'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons-purple devicons-purple devicons devicons-bootstrap' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Boot Strap'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-yellow devicons devicons-javascript_badge' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'JavaScript'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-blue devicons-jquery' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'jQuery'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-red devicons-angular' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Angular'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-green devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'React'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-green devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Redux'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-green devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Web Pack'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-red devicons-gulp' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Gulp'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-green devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'API development'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-blue devicons-postgresql' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'PostgreSQL'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-white devicons-nodejs_small' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Node.js/Express'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-blue devicons-php' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'PhP'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-blue devicons-wordpress' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Word Press'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-red devicons devicons-ruby_on_rails' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Ruby on Rails'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-green devicons-atom' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Heroku'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'devicons devicons-custom devicons devicons-red devicons devicons-firebase' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'devicons-text' },
+	          'Fire Base'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(_footer2.default, null)
+	  );
+	};
+
+	exports.default = SkillsSection;
+
+/***/ },
+/* 657 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Footer = function Footer() {
+
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement("div", { className: "skills-break" }),
+	    _react2.default.createElement("div", { className: "footer" })
+	  );
+	};
+
+	exports.default = Footer;
 
 /***/ },
 /* 658 */
@@ -69130,7 +69335,7 @@
 
 
 	// module
-	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh;\n  font-family: 'Crimson Text', serif; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px;\n    overflow: hidden; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important;\n      font-family: 'Crimson Text', serif !important;\n      font-size: 20px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      font-size: 20px !important;\n      font-family: 'Crimson Text', serif !important;\n      margin-top: -7px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n@-moz-document url-prefix() {\n  body .nav-bar .nav-tabs-container .nav-tabs-resume {\n    margin-top: -41px !important; } }\n\n.profile-header-container {\n  height: 410px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0 3px 3px black;\n  -moz-box-shadow: 0 3px 3px black;\n  box-shadow: 0 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0 19px 60px, rgba(0, 0, 0, 0.219608) 0 15px 20px;\n    border-radius: 5px;\n    min-width: 300px;\n    /* 100px x3 = 300 */\n    overflow: scroll; }\n    .profile-header-container .profile-container .profile-pic-container {\n      min-width: 200px; }\n      .profile-header-container .profile-container .profile-pic-container .profile-pic {\n        border-radius: 10px;\n        height: 185px;\n        width: 200px;\n        display: 'inline-block';\n        background: url(\"/images/profile.jpeg\") no-repeat center top;\n        background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      float: right;\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline;\n        font-family: 'Crimson Text', serif; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 18px;\n        font-weight: bold;\n        font-family: 'Crimson Text', serif; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 90px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 560px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    font-family: 'Crimson Text', serif;\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 50px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n    .projects-container h2 span {\n      padding-right: 20px;\n      -webkit-animation-duration: 2.4s; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .0s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper:hover {\n      box-shadow: 0px 1px 15px 15px #96d2e6 !important; }\n    .projects-container .project-paper .project-title {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      padding-top: 0;\n      color: white;\n      background: rgba(60, 64, 68, 0.7);\n      text-decoration: underline;\n      box-shadow: none; }\n    .projects-container .project-paper .project-footer {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      margin-top: 175px;\n      padding-top: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n\n@media (max-width: 400px) {\n  .project-paper {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n    width: 100% !important; } }\n\n.footer {\n  margin-top: 50px;\n  height: 50px;\n  width: 100%;\n  background: #3c4044; }\n\n.paperForm {\n  margin: 0 auto;\n  margin-top: 50px;\n  width: 50%;\n  height: 500px;\n  margin-bottom: 300px; }\n  .paperForm .contact-form {\n    margin: 0 auto;\n    width: 100%;\n    padding: 30px; }\n    .paperForm .contact-form .submit-btn-container {\n      margin-top: 20px;\n      text-align: right; }\n\n.project-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-detail-container .btn-containerr .back-btn:hover {\n    margin-bottom: 12px;\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-detail-container .details-container .img-container {\n    text-align: center;\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .img-container .project-image {\n      width: 100%; }\n  .project-detail-container .details-container .info-container {\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-detail-container .details-container {\n    padding: 0; }\n    .project-detail-container .details-container .img-container {\n      width: 100%; }\n    .project-detail-container .details-container .info-container {\n      width: 100%; } }\n\n.project-mobile-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-mobile-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-mobile-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-mobile-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-mobile-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-mobile-detail-container .btn-containerr .back-btn:hover {\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-mobile-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-mobile-detail-container .details-container .img-container {\n    text-align: center;\n    width: 100%; }\n    .project-mobile-detail-container .details-container .img-container .project-image {\n      width: 24%;\n      margin: 2px;\n      border: 1px solid black; }\n  .project-mobile-detail-container .details-container .info-container {\n    width: 100%;\n    padding: 15px; }\n    .project-mobile-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-mobile-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-mobile-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-mobile-detail-container .details-container {\n    padding: 0; }\n    .project-mobile-detail-container .details-container .img-container {\n      margin-top: 20px;\n      width: 100%; }\n      .project-mobile-detail-container .details-container .img-container .project-image {\n        width: 48%; }\n    .project-mobile-detail-container .details-container .info-container {\n      width: 100%; } }\n", ""]);
+	exports.push([module.id, ".container {\n  background-color: white;\n  margin-left: 0;\n  margin-right: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 100%;\n  height: 100vh;\n  font-family: 'Crimson Text', serif; }\n\n.nav-bar {\n  background-color: white !important;\n  -webkit-box-shadow: 0px 1px 1px #de1dde;\n  -moz-box-shadow: 0px 1px 1px #de1dde;\n  box-shadow: 0px 1px 1px #de1dde;\n  height: 70px; }\n  .nav-bar span div {\n    background: black !important; }\n  .nav-bar .nav-logo {\n    height: 62px;\n    margin-top: -4px;\n    vertical-align: middle; }\n  .nav-bar .nav-tabs-container {\n    background-color: white !important;\n    width: 400px;\n    overflow: hidden; }\n    .nav-bar .nav-tabs-container .nav-tabs {\n      background: white !important;\n      height: 70px !important;\n      color: black !important;\n      font-weight: bolder !important;\n      font-family: 'Crimson Text', serif !important;\n      font-size: 20px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs:hover {\n        background: #dbdbdb !important; }\n    .nav-bar .nav-tabs-container .nav-tabs-resume {\n      font-size: 20px !important;\n      font-family: 'Crimson Text', serif !important;\n      margin-top: -7px !important;\n      background: white !important;\n      color: black !important;\n      font-weight: bolder !important;\n      height: 70px !important;\n      padding-top: 11px !important; }\n      .nav-bar .nav-tabs-container .nav-tabs-resume:hover {\n        background: #dbdbdb !important; }\n\n@-moz-document url-prefix() {\n  body .nav-bar .nav-tabs-container .nav-tabs-resume {\n    margin-top: -41px !important; } }\n\n.profile-header-container {\n  height: 410px;\n  width: 100%;\n  padding-top: 25px;\n  background: url(\"/images/profileBackDrop.jpg\") no-repeat center center;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  -webkit-box-shadow: 0 3px 3px black;\n  -moz-box-shadow: 0 3px 3px black;\n  box-shadow: 0 3px 3px black; }\n  .profile-header-container .profile-container {\n    width: 70%;\n    height: 200px;\n    margin: 0 auto;\n    padding: 7px;\n    display: flex;\n    background-color: rgba(255, 255, 255, 0.3);\n    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0;\n    box-sizing: border-box;\n    font-family: Roboto, sans-serif;\n    -webkit-tap-highlight-color: transparent;\n    box-shadow: rgba(0, 0, 0, 0.298039) 0 19px 60px, rgba(0, 0, 0, 0.219608) 0 15px 20px;\n    border-radius: 5px;\n    min-width: 300px;\n    /* 100px x3 = 300 */\n    overflow: scroll; }\n    .profile-header-container .profile-container .profile-pic-container {\n      min-width: 200px; }\n      .profile-header-container .profile-container .profile-pic-container .profile-pic {\n        border-radius: 10px;\n        height: 185px;\n        width: 200px;\n        display: 'inline-block';\n        background: url(\"/images/profile.jpeg\") no-repeat center top;\n        background-size: contain; }\n    .profile-header-container .profile-container .profile-info {\n      float: right;\n      padding-left: 5px; }\n      .profile-header-container .profile-container .profile-info h1 {\n        margin: 0;\n        text-decoration: underline;\n        font-family: 'Crimson Text', serif; }\n      .profile-header-container .profile-container .profile-info p {\n        padding-top: 15px;\n        font-size: 18px;\n        font-weight: bold;\n        font-family: 'Crimson Text', serif; }\n  .profile-header-container .btn-container {\n    margin: 0 auto;\n    width: 80%;\n    text-align: center;\n    margin-top: 90px; }\n    .profile-header-container .btn-container .social-media-button {\n      border: 3px solid white;\n      display: inline-block;\n      font-size: 20px;\n      color: white; }\n\n@media (max-width: 990px) {\n  .profile-container {\n    width: 80% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 80% !important; } }\n\n@media (max-width: 760px) {\n  .profile-container {\n    width: 100% !important;\n    border-radius: none !important; }\n  .btn-container {\n    width: 100% !important; } }\n\n@media (max-width: 560px) {\n  .profile-header-container {\n    height: 400px;\n    padding-top: 10px; }\n  .profile-container {\n    width: 280px !important;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .profile-container .profile-info {\n      display: none; }\n  .btn-container {\n    width: 280px !important;\n    margin-top: 0 !important; }\n    .btn-container .social-media-button {\n      width: 100% !important; } }\n\n.projects-main-container .projects-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.projects-container {\n  margin: 0 auto;\n  width: 100%;\n  text-align: center; }\n  .projects-container h2 {\n    font-family: 'Crimson Text', serif;\n    margin: 0 auto;\n    width: 100%;\n    height: 50px;\n    padding-top: 12px;\n    margin-bottom: 50px;\n    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n    .projects-container h2 span {\n      padding-right: 20px;\n      -webkit-animation-duration: 2.4s; }\n  .projects-container .project-paper {\n    -webkit-animation-duration: .8s;\n    -webkit-animation-delay: .0s;\n    background-size: 400px 250px; }\n    .projects-container .project-paper:hover {\n      box-shadow: 0px 1px 15px 15px #96d2e6 !important; }\n    .projects-container .project-paper .project-title {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      padding-top: 0;\n      color: white;\n      background: rgba(60, 64, 68, 0.7);\n      text-decoration: underline;\n      box-shadow: none; }\n    .projects-container .project-paper .project-footer {\n      height: 38px;\n      font-family: 'Crimson Text', serif;\n      margin: 0;\n      margin-top: 175px;\n      padding-top: 0;\n      color: white;\n      background: #3c4044;\n      text-decoration: underline; }\n\n.project-paper {\n  background-size: 400px 250px !important; }\n\n@media (max-width: 760px) {\n  .projects-main-container .projects-header {\n    width: 100%; } }\n\n@media (max-width: 400px) {\n  .project-paper {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n    width: 100% !important; } }\n\n.skills-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.footer {\n  height: 120px;\n  width: 100%;\n  background: #2c2e30; }\n\n.paperForm {\n  margin: 0 auto;\n  margin-top: 50px;\n  width: 50%;\n  height: 500px;\n  margin-bottom: 300px; }\n  .paperForm .contact-form {\n    margin: 0 auto;\n    width: 100%;\n    padding: 30px; }\n    .paperForm .contact-form .submit-btn-container {\n      margin-top: 20px;\n      text-align: right; }\n\n.project-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-detail-container .btn-containerr .back-btn:hover {\n    margin-bottom: 12px;\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-detail-container .details-container .img-container {\n    text-align: center;\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .img-container .project-image {\n      width: 100%; }\n  .project-detail-container .details-container .info-container {\n    width: 50%;\n    padding: 15px; }\n    .project-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-detail-container .details-container {\n    padding: 0; }\n    .project-detail-container .details-container .img-container {\n      width: 100%; }\n    .project-detail-container .details-container .info-container {\n      width: 100%; } }\n\n.project-mobile-detail-container .project-break {\n  height: 50px;\n  margin: 0 auto;\n  width: 100%;\n  text-align: center;\n  background-color: #3c4044;\n  color: white;\n  transition: width 1s; }\n\n.project-mobile-detail-container h2 {\n  text-align: center;\n  font-family: 'Crimson Text', serif;\n  margin: 0 auto;\n  width: 100%;\n  height: 50px;\n  padding-top: 12px;\n  margin-bottom: 10px;\n  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n  .project-mobile-detail-container h2 span {\n    padding-right: 20px;\n    -webkit-animation-duration: 2.4s; }\n\n.project-mobile-detail-container .btn-containerr {\n  height: 40px;\n  text-align: center;\n  padding: 10px; }\n  .project-mobile-detail-container .btn-containerr .back-btn {\n    display: inline-block;\n    text-align: center;\n    font-size: 20px;\n    height: 40px;\n    padding: 3px;\n    cursor: pointer;\n    width: 120px;\n    background-color: rgba(255, 255, 255, 0);\n    border: 4px solid black;\n    border-radius: 5px;\n    cursor: pointer;\n    color: black;\n    transition: width .3s, height .3s, padding .3s, background-color .3s, border .1s; }\n  .project-mobile-detail-container .btn-containerr .back-btn:hover {\n    padding: 5px;\n    height: 45px;\n    width: 130px;\n    color: white;\n    background-color: #3c4044;\n    text-decoration: none; }\n\n.project-mobile-detail-container .details-container {\n  padding: 40px;\n  display: flex;\n  flex-wrap: wrap; }\n  .project-mobile-detail-container .details-container .img-container {\n    text-align: center;\n    width: 100%; }\n    .project-mobile-detail-container .details-container .img-container .project-image {\n      width: 24%;\n      margin: 2px;\n      border: 1px solid black; }\n  .project-mobile-detail-container .details-container .info-container {\n    width: 100%;\n    padding: 15px; }\n    .project-mobile-detail-container .details-container .info-container p {\n      color: black;\n      font-size: 20px; }\n    .project-mobile-detail-container .details-container .info-container .live-site {\n      color: black;\n      font-size: 30px;\n      text-decoration: none;\n      transition: font-size .4s, color .4s; }\n    .project-mobile-detail-container .details-container .info-container .live-site:hover {\n      color: #3c4044;\n      font-size: 35px; }\n\n@media (max-width: 990px) {\n  .project-mobile-detail-container .details-container {\n    padding: 0; }\n    .project-mobile-detail-container .details-container .img-container {\n      margin-top: 20px;\n      width: 100%; }\n      .project-mobile-detail-container .details-container .img-container .project-image {\n        width: 48%; }\n    .project-mobile-detail-container .details-container .info-container {\n      width: 100%; } }\n\n.skill-container {\n  height: 600px;\n  padding-top: 50px; }\n  .skill-container .skills-break {\n    height: 50px;\n    margin: 0 auto;\n    width: 100%;\n    background-color: #3c4044;\n    color: white;\n    transition: width 1s; }\n  .skill-container .skills-break-head {\n    width: 100%;\n    text-align: center; }\n    .skill-container .skills-break-head h2 {\n      font-family: 'Crimson Text', serif;\n      margin: 0 auto;\n      width: 100%;\n      height: 50px;\n      padding-top: 12px;\n      margin-bottom: 50px;\n      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298039); }\n      .skill-container .skills-break-head h2 span {\n        padding-right: 20px;\n        -webkit-animation-duration: 2.4s; }\n  .skill-container .skills-container {\n    padding-top: 30px;\n    padding-bottom: 70px;\n    margin-left: 100px;\n    margin-right: 100px;\n    text-align: center; }\n    .skill-container .skills-container .devicons-custom {\n      font-size: 30px;\n      display: inline-block;\n      border: 1px solid #3c4044;\n      box-shadow: 0px 0px 4px 4px rgba(60, 64, 68, 0.298039) !important;\n      border-radius: 5px;\n      padding: 5px;\n      margin: 10px; }\n      .skill-container .skills-container .devicons-custom .devicons-text {\n        display: inline;\n        padding-left: 5px;\n        font-size: 20px;\n        vertical-align: middle; }\n\n.devicons-yellow {\n  background-color: #555a60;\n  color: yellow !important; }\n\n.devicons-blue {\n  background-color: #555a60;\n  color: #8acef0; }\n\n.devicons-red {\n  background-color: #555a60;\n  color: #ca3d32; }\n\n.devicons-purple {\n  background-color: #555a60;\n  color: #6b72a2; }\n\n.devicons-green {\n  background-color: #555a60;\n  color: #06b83d; }\n\n.devicons-white {\n  background-color: #555a60;\n  color: white; }\n\n.devicons-pink {\n  background-color: #555a60;\n  color: #d769cc; }\n\n.devicons-rust {\n  background-color: #555a60;\n  color: #c8864f; }\n", ""]);
 
 	// exports
 

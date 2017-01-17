@@ -30,22 +30,59 @@
 
   .skills-container{
     padding-top: 30px;
+    padding-bottom: 70px;
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
     .devicons-custom {
       font-size: 30px;
       display: inline-block;
-      border: 1px solid black;
+      border: 1px solid rgb(60, 64, 68);
+      box-shadow: 0px 0px 4px 4px rgba(60, 64, 68, 0.298039) !important;
       border-radius: 5px;
       padding: 5px;
       margin: 10px;
       .devicons-text {
         display: inline;
         padding-left: 5px;
-        font-size: 18px;
+        font-size: 20px;
         vertical-align: middle;
       }
     }
   }
+}
+
+
+.devicons-yellow {
+  background-color: rgb(85, 90, 96);
+  color: yellow !important;
+}
+.devicons-blue {
+  background-color: rgb(85, 90, 96);
+  color: rgb(138, 206, 240);
+
+}
+.devicons-red {
+  background-color: rgb(85, 90, 96);
+  color: rgb(202, 61, 50);
+}
+.devicons-purple {
+  background-color: rgb(85, 90, 96);
+  color: rgb(107, 114, 162);
+}
+.devicons-green {
+  background-color: rgb(85, 90, 96);
+  color: rgb(6, 184, 61);
+}
+.devicons-white {
+  background-color: rgb(85, 90, 96);
+  color: white;
+}
+.devicons-pink {
+  background-color: rgb(85, 90, 96);
+  color: rgb(215, 105, 204);
+}
+.devicons-rust {
+  background-color: rgb(85, 90, 96);
+  color: rgb(200,134,79);
 }
