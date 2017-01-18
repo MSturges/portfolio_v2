@@ -20,8 +20,9 @@ const SkillsSection = () => {
     <div className="devicons devicons-custom devicons devicons-yellow devicons devicons-javascript_badge"><div className="devicons-text">JavaScript</div></div>
     <div className="devicons devicons-custom devicons devicons-blue devicons-jquery"><div className="devicons-text">jQuery</div></div>
     <div className="devicons devicons-custom devicons devicons-red devicons-angular"><div className="devicons-text">Angular</div></div>
-    <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">React</div></div>
-    <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">Redux</div></div>
+    <div className="devicons devicons-custom devicons devicons-white devicons-atom"><div className="devicons-text">Ionic/Cordova</div></div>
+    <div className="devicons devicons-custom devicons devicons-blue devicons-atom"><div className="devicons-text">React</div></div>
+    <div className="devicons devicons-custom devicons devicons-blue devicons-atom"><div className="devicons-text">Redux</div></div>
     <div className="devicons devicons-custom devicons devicons-white devicons-atom"><div className="devicons-text">Web Pack</div></div>
     <div className="devicons devicons-custom devicons devicons-red devicons-gulp"><div className="devicons-text">Gulp</div></div>
     <div className="devicons devicons-custom devicons devicons-green devicons-atom"><div className="devicons-text">API development</div></div>

@@ -72,7 +72,7 @@
 }
 .devicons-green {
   background-color: rgb(85, 90, 96);
-  color: rgb(6, 184, 61);
+  color: rgb(6, 238, 78);
 }
 .devicons-white {
   background-color: rgb(85, 90, 96);
@@ -85,4 +85,12 @@
 .devicons-rust {
   background-color: rgb(85, 90, 96);
   color: rgb(200,134,79);
+}
+
+@media (max-width: 900px) {
+  .skill-container {
+    .skills-container{
+      margin: 0;
+    }
+  }
 }
